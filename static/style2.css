@@ -1,21 +1,18 @@
 /* ABOUT PAGE STYLING */
 .about-section {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
+  background-color: #121212;
+  color: #fff;
   padding: 50px 0;
-  min-height: 100vh;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .about-title {
   font-weight: 700;
-  color: #667eea;
+  color: #0d6efd;
   margin-bottom: 20px;
-  font-size: 2.5rem;
 }
 
 .about-text {
-  color: var(--text-secondary);
+  color: #bbb;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.8;
@@ -25,65 +22,31 @@
 .divider {
   width: 60%;
   margin: 40px auto;
-  border: 2px solid var(--border-color);
-  transition: border-color 0.3s ease;
+  border: 1px solid #333;
 }
 
 .about-subtitle {
-  color: #667eea;
+  color: #0d6efd;
   font-weight: 600;
   margin-bottom: 20px;
-  font-size: 1.5rem;
 }
 
 .project-list {
   list-style: none;
   padding: 0;
-  text-align: left;
-  display: inline-block;
 }
 
 .project-list li {
-  margin: 15px 0;
-  padding: 10px 15px;
-  border-left: 4px solid #667eea;
-  background-color: var(--bg-secondary);
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-.project-list li:hover {
-  transform: translateX(10px);
-  background-color: #667eea;
-  color: white;
+  margin: 10px 0;
 }
 
 .project-list a {
-  color: #667eea;
+  color: #66b2ff;
   text-decoration: none;
-  font-weight: 500;
   transition: 0.3s;
 }
 
-.project-list li:hover a {
-  color: white;
-}
-
 .project-list a:hover {
+  color: red;
   text-decoration: underline;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .about-title {
-    font-size: 2rem;
-  }
-
-  .about-text {
-    font-size: 1rem;
-  }
-
-  .divider {
-    width: 80%;
-  }
 }

@@ -7,30 +7,21 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        {% if user.is_authenticated %}
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'Home' %}">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'Projects' %}">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'About' %}">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'Contact' %}">Contact</a>
-          </li>
-          <li class="nav-item">
-            <span class="navbar-text text-light me-3">Hello, {{ user.username }}!</span>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-warning" href="{% url 'logout' %}">Logout</a>
-          </li>
-        {% else %}
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'login' %}">Login</a>
-          </li>
-        {% endif %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'Home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'Projects' %}">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'About' %}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'Contact' %}">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning" href="{% url 'logout' %}">Logout</a>
+        </li>
       </ul>
     </div>
   </div>
