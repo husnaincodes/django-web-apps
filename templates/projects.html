@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Projects | husnaincodes</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'style3.css' %}?v={% now 'timestamp' %}">
+  <link rel="stylesheet" href="{% static 'style.css' %}?v={% now 'timestamp' %}">
+</head>
+<body>
+  {% include 'navbar.html' %}
+
+  <section class="projects-section">
+    <div class="container mt-5">
+      <h1 class="text-center projects-title">My Python Projects </h1>
+      <p class="text-center projects-intro">
+        A collection of my hands-on Python learning projects from simple pattern programs to functional applications.
+      </p>
+
+      <!-- Pattern Projects -->
+      <div class="project-category mt-5">
+        <h2>Pattern Programs</h2>
+        <ul class="project-list">
+          <li>Right-Angled Triangle</li>
+          <li>Inverted Right-Angled Triangle</li>
+          <li>Pyramid Pattern</li>
+          <li>Diamond Pattern</li>
+          <li>Square and Hollow Square</li>
+          <li>Half and Full Number Patterns (optional)</li>
+        </ul>
+      </div>
+
+      <!-- Small Python Programs -->
+      <div class="project-category mt-5">
+        <h2>Small Python Programs</h2>
+        <ul class="project-list">
+          <li>Replace Words – Find and replace words in a file</li>
+          <li>Temperature Convertor – Convert Celsius ↔ Fahrenheit</li>
+          <li>Class.py – Demonstrating Python classes and objects</li>
+          <li>File Read / Write – Handle text file operations</li>
+          <li>Function Examples – Create and return function values</li>
+          <li>Rock, Paper, Scissors – Console-based game</li>
+          <li>Hiscore Game – Save and update high scores</li>
+          <li>Inch to Cm – Mathematical conversion program</li>
+          <li>Snake, Gun, Water – Classic Python mini game</li>
+        </ul>
+      </div>
+
+      <!-- Full Projects -->
+      <div class="project-category mt-5">
+        <h2>Full Python Projects</h2>
+        <table class="table table-dark table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Project Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Email check.py / Email sender.py</td><td>Validate and send emails using Python.</td></tr>
+            <tr><td>Notification.py</td><td>Simple desktop notification app.</td></tr>
+            <tr><td>Rent calculator.py</td><td>Calculates rent splits and expenses.</td></tr>
+            <tr><td>Adventure game.py</td><td>Interactive text-based adventure game.</td></tr>
+            <tr><td>Hangman game.py</td><td>Classic Hangman guessing game.</td></tr>
+            <tr><td>Login page.py (Flask)</td><td>Basic web app for user login.</td></tr>
+            <tr><td>Password manager.py</td><td>Stores and manages passwords securely.</td></tr>
+            <tr><td>Project_02.py</td><td>Number guessing game.</td></tr>
+            <tr><td>Project_03.py</td><td>QR code generator.</td></tr>
+            <tr><td>Python project1.py</td><td>Dice roll simulation game.</td></tr>
+            <tr><td>Quiz game.py</td><td>Simple Python quiz logic.</td></tr>
+            <tr><td>Voice AI.py</td><td>Voice assistant using speech libraries.</td></tr>
+            <tr><td>Words.txt / Password.txt</td><td>Support files for projects.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="container mt-5">
+      <h1 class="text-center projects-title">My Web Development&Design Projects </h1>
+      <p class="text-center projects-intro">
+        A collection of my hands-on Web Development & Design learning projects.
+      </p>
+       <div class="project-category mt-5">
+        <h2>Projects</h2>
+        <table class="table table-dark table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Project Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+            <tbody>
+              <tr><td>Car website/</td><td>Car website frontend project.</td></tr>
+              <tr><td>Dashboard/</td><td>Dashboard UI project.</td></tr>
+              <tr><td>bookmark website/</td><td>Bookmarks website project.</td></tr>
+              <tr><td>javascript/</td><td>Document object model in JavaScript.</td></tr>
+              <tr><td>Todo list app.html</td><td>Interactive to-do list web app.</td></tr>
+              <tr><td>password-checker-25051.html</td><td>Password strength checker tool.</td></tr>
+              <tr><td>image inside the text.html</td><td>HTML file with image-in-text layout.</td></tr>
+              <tr><td>perfume.html / perfume.css</td><td>Perfume product webpage with styling.</td></tr>
+              <tr><td>shoes website.html</td><td>Shoes e-commerce style website.</td></tr>
+              <tr><td>project1.html / project2.html</td><td>General HTML practice projects.</td></tr>
+              <tr><td>image.css / style.css / style2.css</td><td>Stylesheet files for various HTML projects.</td></tr>
+              <tr><td>4.jpg / Forest.jpeg / roses.jpeg / mainBackground.jpg / contactBackground.jpg / servicesBackground.jpg</td><td>Background and decorative images used across projects.</td></tr>
+              <tr><td>link.txt</td><td>Web Design &amp; Development reference links.</td></tr>
+              
+            </tbody>
+        </table>
+      </div>
+      <!-- GitHub Link -->
+      <div class="text-center mt-4">
+        <a href="https://github.com/husnaincodes" class="btn btn-outline-primary" target="_blank">Visit My GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

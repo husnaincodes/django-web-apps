@@ -1,0 +1,215 @@
+/* ===============================
+   General Styling (Sky Blue Theme)
+================================ */
+
+:root {
+
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f9ff;
+
+  --text-primary: #000000;
+  --text-secondary: #444444;
+  --border-color: #e0e0e0;
+
+  /* SKY BLUE HERO GRADIENT */
+  --hero-bg: linear-gradient(135deg, #7dd3fc 0%, #0ea5e9 100%);
+}
+
+html[data-theme="dark"] {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+  --border-color: #334155;
+
+  /* DARK SKY MODE */
+  --hero-bg: linear-gradient(135deg, #0369a1 0%, #020617 100%);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ===============================
+   Navbar
+================================ */
+
+.navbar {
+  background-color: #000000 !important;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  transition: background-color 0.3s ease;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+html[data-theme="dark"] .navbar {
+  background-color: #020617 !important;
+  border-bottom: 1px solid #1e293b;
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.nav-link {
+  color: #eaf6ff !important;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* ===============================
+   Hero Section
+================================ */
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px 60px 20px;
+  padding-top: 80px;
+  background: var(--hero-bg);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* Soft sky overlay */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.08);
+  z-index: 0;
+}
+
+.hero-content {
+  color: white;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  max-width: 800px;
+}
+
+/* Heading */
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  text-shadow:
+    0 2px 10px rgba(0,0,0,0.4),
+    
+}
+
+/* Subtitle */
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: rgba(0,0,0,0.95);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 2s ease forwards;
+  animation-delay: 0.5s;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  font-weight: 500;
+}
+
+/* ===============================
+   Typing Animation
+================================ */
+
+.typing-text {
+  font-size: 3rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #38bdf8;
+  width: 0;
+  animation: typing 3.5s steps(26, end) forwards, blink 0.8s infinite;
+  display: inline-block;
+  min-width: fit-content;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 26ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   Colors
+================================ */
+
+.site-name {
+  color: white;
+}
+
+.brand {
+  color: #38bdf8;
+}
+
+/* ===============================
+   Responsive Design
+================================ */
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .typing-text {
+    font-size: 2rem;
+  }
+
+  .hero-section {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .typing-text {
+    font-size: 1.5rem;
+  }
+
+  .hero-section {
+    padding: 30px 15px;
+  }
+}
